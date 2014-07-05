@@ -854,6 +854,7 @@
   #define ACC_ORIENTATION(X, Y, Z)  {imu.accADC[ROLL]  = -X; imu.accADC[PITCH]  = -Y; imu.accADC[YAW]  =  Z;}
   #define GYRO_ORIENTATION(X, Y, Z) {imu.gyroADC[ROLL] =  Y; imu.gyroADC[PITCH] = -X; imu.gyroADC[YAW] = -Z;}
   #define RC_CHANS 8
+  #define V_BATPIN                  A3
 #endif
 
 #if defined(FFIMUv1)

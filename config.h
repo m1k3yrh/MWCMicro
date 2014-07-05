@@ -155,7 +155,7 @@
       //#define MultiWii_32U4_SE_no_baro // Hextronik MultiWii_32U4_SE without the MS561101BA for more free flash-memory
       //#define Flyduino9DOF       // Flyduino 9DOF IMU MPU6050+HMC5883l
       //#define Nano_Plane         // Multiwii Plane version with tail-front LSM330 sensor http://www.radiosait.ru/en/page_5324.html
-      #define HK_MICRO_MWC 
+      #define HK_MICRO_MWC
       
     /***************************    independent sensors    ********************************/
       /* leave it commented if you already checked a specific board above */
@@ -808,7 +808,7 @@
        with R1=33k and R2=51k
        vbat = [0;1023]*16/VBATSCALE
        must be associated with #define BUZZER ! */
-    //#define VBAT              // uncomment this line to activate the vbat code
+    #define VBAT              // uncomment this line to activate the vbat code
     #define VBATSCALE       131 // (*) (**) change this value if readed Battery voltage is different than real voltage
     #define VBATNOMINAL     126 // 12,6V full battery nominal voltage - only used for lcd.telemetry
     #define VBATLEVEL_WARN1 107 // (*) (**) 10,7V
